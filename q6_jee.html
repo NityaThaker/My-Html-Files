@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Examination Form</title>
+</head>
+<body>
+    <h1 align="center">JEE Exam Registration Form</h1>
+    <form action="#" method="post">
+        
+        <label for="name">Enter your full Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name" name="name" required><br><br>
+
+        <label for="roll">Roll Number:</label>
+        <input type="text" id="roll" name="roll" placeholder="eg. 23XXX092739" required><br><br>
+
+    
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br>
+        <br>
+
+    
+        <label>Documents Submitted:</label><br>
+        <input type="checkbox" id="ad1" name="ads" value="ad1">
+        <label for="ad1">Aadhar Card</label><br>
+        <input type="checkbox" id="ad2" name="ads" value="ad2">
+        <label for="ad2">Passport</label><br>
+        <input type="checkbox" id="ad3" name="ads" value="ad3">
+        <label for="ad3">Birth Certificate</label><br><br>
+
+    
+        <label for="state">State:</label>
+        <select id="state" name="state" size="3" required>
+            <option value="UP">Gujarat</option>
+            <option value="MH">Maharashtra</option>
+            <option value="RJ">Rajasthan</option>
+            <option value="TN">Karnataka</option>
+            <option value="KA">Tamil Nadu</option>
+        </select><br><br>
+
+
+        <label for="center">Preferred Exam Center:</label>
+        <select id="center" name="center"  required>
+            <option value="nadiad">nadiad</option>
+            <option value="ahmedabad">ahmedabad</option>
+            <option value="surat">surat</option>
+            <option value="mumbai">mumbai</option>
+        </select><br><br>
+
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="30" required></textarea><br><br>
+
+    
+        <label>Upload Photo:</label>
+        <input type="file" name="photo"  required><br><br>
+
+
+        <fieldset>
+            <legend>Other Details</legend>
+            <label for="category">Category:</label>
+            <input list="categories" id="category" name="category" required>
+            <datalist id="categories">
+                <option value="General">
+                <option value="OBC">
+                <option value="SC">
+                <option value="ST">
+                <option value="EWS">
+            </datalist><br><br>
+
+            <label for="pwd">Are you differently abled?</label><br>
+            <input type="radio" id="yes" name="pwd" value="Yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="pwd" value="No">
+            <label for="no">No</label><br>
+        </fieldset><br>
+
+        *check all the details before submission: <input type="submit" value="Submit"><br><br>
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
